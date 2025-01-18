@@ -1,0 +1,337 @@
+
+:root {
+    --blue-u: #0065EF;
+    --dark-blue:#14192c;
+    --white:#fff;
+    --black: #000;
+    --dark-grey:#383b42;
+    --light-blue:#4fbbea;
+
+  }
+
+  /*Estilos de base para móvil. Valores Generales */
+body {
+    font-family: "Roboto", serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--dark-blue);
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--dark-blue);
+    
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+p {
+    width: 100%; 
+    max-width: 600px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--dark-grey);
+    text-align: center;
+    padding: 0 10px;
+}
+
+
+
+/*Estilos por secciones */
+
+.web {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;        
+}
+
+/*Sección introducción */
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;    
+}
+
+.logo {
+    display: none;
+    width:40%;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+
+/*Sección agenda */
+.agenda{
+    margin-block: 30px;
+}
+
+.ponencias_tarde {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+table {
+    font-size: 0.9rem;
+    color: var(--dark-grey);
+    width: 100%;
+}
+
+thead {
+    display: none;
+}
+
+tbody td {
+    display: block;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: var(--blue-u);
+    position: relative;
+    padding: 2%;
+}
+
+td:before {
+    display: inline-block;
+}
+
+td:nth-of-type(1):before {content: "Inicio: ";}
+td:nth-of-type(2):before {content: "Fin: ";}
+td:nth-of-type(3):before {content: "Ponente: ";}
+td:nth-of-type(4):before {content: "Charla/Taller: "; }
+
+td:first-child {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.titulo-charla {
+    transition: background-color 0.5s ease;
+    padding: 5px
+}
+
+.titulo-charla:hover{
+    background-color: var(--light-blue);
+    color: white;
+}
+
+/*Sección de la inscripción */
+.inscripcion{
+    width: 100%; 
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 60px;
+    
+}
+
+.label {
+    margin-bottom: 4px;
+}
+
+.input {
+    border-radius: 8px;
+    margin-bottom: 6px;
+    height: 20px;
+}
+
+.boton-confirmar {
+    background-color: var(--blue-u); 
+    color: var(--white); 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1rem;
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    display: block; 
+    margin: 20px auto; 
+    
+}
+
+/*Sección de consultas */
+
+.form-consultas {
+    width: 100%; 
+    max-width: 600px; 
+    margin-bottom: 20px; 
+}
+
+.input, textarea {
+    width: 100%; 
+    padding: 16px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    margin-bottom: 8px; 
+    box-sizing: border-box;
+}
+
+.boton-consulta {
+    background-color: var(--blue-u); 
+    color: var(--white); 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1rem;
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    display: block; 
+    margin: 20px auto; 
+}
+
+.direccion {
+    width: 100%; 
+    max-width: 600px; 
+    text-align: center; 
+}
+
+.subtitle-direccion {
+    margin-top: 20px; 
+}
+
+.redes-sociales {
+    display: flex;
+}
+
+.imagen-redsocial {
+    margin: 10px;
+}
+
+
+/*Media queries para tablet */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;        
+    }
+    
+    h1 {
+        font-size: 3.5rem; 
+    }
+
+    h2 {
+        font-size: 2rem; 
+    }
+
+    h3 {
+        font-size: 1.2rem; 
+    }
+
+    p {
+        font-size: 1.1rem;
+        max-width: 70%; 
+        text-align: center;
+        margin: 0 auto; 
+    }
+
+    table {
+        font-size: 1rem; 
+    }
+
+    .logo {
+        display: block;
+        width:20%;
+        height: auto;
+    }
+
+    thead {
+        display: table-header-group; 
+    }
+
+    tbody td {
+        display: table-cell; 
+        border: 1px solid var(--blue-u); 
+        padding: 10px; 
+        border-radius: 4px;
+    }
+
+    tbody tr {
+        display: table-row; 
+    }
+
+    td:before {
+        display: none; 
+    }
+}
+
+
+/*Media queries a ordenador */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;        
+    }
+
+    h1 {
+        font-size: 6rem; 
+        padding: 60px;
+    }
+
+    h2 {
+        font-size: 2.5rem; 
+    }
+
+    h3 {
+        font-size: 1.5rem; 
+    }
+
+    p {
+        font-size: 1.2rem;
+        max-width: 60%; 
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .p1direccion {
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 1.1rem; 
+    }
+
+    .logo {
+        display: block;
+        width:20%;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    thead {
+        display: table-header-group; 
+    }
+
+    tbody td {
+        display: table-cell; 
+        border: 1px solid var(--blue-u); 
+        padding: 10px;
+        border-radius: 4px; 
+    }
+
+    tbody tr {
+        display: table-row; 
+    }
+
+    td:before {
+        display: none; 
+    }
+
+
+
+}
