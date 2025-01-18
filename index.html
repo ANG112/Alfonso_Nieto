@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento programación U-TAD</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+
+ 
+</head>
+<body> 
+
+    <section class="web">
+        <section class="introduccion">
+            <h1 class="title">U-TAD CodeFest 2025</h1>
+            <div class="imagen">
+                <img src="./src/img/logo_universidad_31.png" alt="logo-U-tad" class="logo">
+            </div>
+            
+            <h2 class="subtitle-resumen">¿Qué vas a encontrar?</h2>
+            <p class="resumen">Evento de programación diseñado para estudiantes, profesionales y entusiastas de la tecnología que buscan mejorar sus habilidades, aprender nuevas tecnologías y conectar con otros apasionados de la programación.</p>
+        </section>
+
+        <section class="agenda">
+            <div class="ponencias_mañana">
+                <h2 class="titulo_ponencias">Ponencias de la Mañana</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Inicio</th>
+                            <th>Fin</th>
+                            <th>Ponente</th>
+                            <th>Charla/Taller</th>
+                        </tr>                    
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00</td>
+                            <td>10:00</td>
+                            <td>Marcos</td>
+                            <td class="titulo-charla">Creación de páginas webs responsivas</td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>11:00</td>
+                            <td>Marta</td>
+                            <td class="titulo-charla">Dockers en despliegue de aplicaciones web en AWS</td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td>12:00</td>
+                            <td>Laura</td>
+                            <td class="titulo-charla">Introducción a la Inteligencia Artificial</td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>13:00</td>
+                            <td>Javier</td>
+                            <td class="titulo-charla">Desarrollo Ágil: Metodologías y Prácticas</td>
+                        </tr>
+                        <tr>
+                            <td>13:00</td>
+                            <td>14:00</td>
+                            <td>Claudia</td>
+                            <td class="titulo-charla">Mesa Redonda: El Futuro del Desarrollo Web</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="ponencias_tarde">
+                <h2 class="titulo_ponencias">Ponencias de la Tarde</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Inicio</th>
+                            <th>Fin</th>
+                            <th>Ponente</th>
+                            <th>Charla/Taller</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>16:00</td>
+                            <td>17:00</td>
+                            <td>Pedro</td>
+                            <td class="titulo-charla">DevOps: Más fácil, más rápido, más estable</td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td>18:00</td>
+                            <td>Mario</td>
+                            <td class="titulo-charla">Últimas tendencias en seguridad</td>
+                        </tr>
+                        <tr>
+                            <td>18:00</td>
+                            <td>19:00</td>
+                            <td>Isabel</td>
+                            <td class="titulo-charla">Blockchain: Más allá de las criptomonedas</td>
+                        </tr>
+                        <tr>
+                            <td>19:00</td>
+                            <td>20:00</td>
+                            <td>Fernando</td>
+                            <td class="titulo-charla">Mesa Redonda: Innovación en el Desarrollo de Software</td>
+                        </tr>
+                        <tr>
+                            <td>20:00</td>
+                            <td>21:00</td>
+                            <td>Esteban</td>
+                            <td class="titulo-charla">El Impacto de la IA en el Desarrollo de Software</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <form action="/enviar" method="post" class="inscripcion">
+            <h2 class="subtitulo-inscripcion">Inscríbite</h2>
+            <label for="nombre" class="label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required class="input">
+
+            <label for="apellido1" class="label">1er apellido</label>
+            <input type="text" id="apellido1" name="apellido1" required class="input">
+
+            <label for="apellido2" class="label">2º apellido</label>
+            <input type="text" id="apellido2" name="apellido2" class="input">
+
+            <label for="email" class="label">Email</label>
+            <input type="email" id="email" name="email" required class="input">
+
+            <label for="telefono" class="label">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" class="input">
+
+            <div class="selecciona-charla">
+                <h3 class="titulo-selecciona">Selecciona las charlas a las que deseas asistir</h3>
+
+                <div>
+                    <input type="checkbox" id="charla1" name="charlas" value="charla1">
+                    <label for="charla1">Creación de páginas webs responsivas</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="charla2" name="charlas" value="charla2">
+                    <label for="charla2">Dockers en despliegue de aplicaciones web en AWS</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="charla3" name="charlas" value="charla3">
+                    <label for="charla3">Introducción a la Inteligencia Artificial</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="charla4" name="charlas" value="charla4">
+                    <label for="charla4">Desarrollo Ágil: Metodologías y Prácticas</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="charla5" name="charlas" value="charla5">
+                    <label for="charla5">Mesa Redonda: El Futuro del Desarrollo Web</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="charla6" name="charlas" value="charla6">
+                    <label for="charla6">DevOps: Más fácil, más rápido, más estable</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="charla7" name="charlas" value="charla7">
+                    <label for="charla7">Últimas tendencias en seguridad</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="charla8" name="charlas" value="charla8">
+                    <label for="charla8">Blockchain: Más allá de las criptomonedas</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="charla9" name="charlas" value="charla9">
+                    <label for="charla9">Mesa Redonda: Innovación en el Desarrollo de Software</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="charla10" name="charlas" value="charla10">
+                    <label for="charla10">El Impacto de la IA en el Desarrollo de Software</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Confirmar asistencia" class="boton-confirmar">
+        </form>
+
+      
+        <form action="/enviar" method="post" class="form-consultas">
+
+            <h2 class="subtitulo-consultas">¿Alguna duda o consulta?</h2>
+
+            <label for="nombre_consult" class="label">Nombre</label>
+            <input type="text" id="nombre_consult" name="nombre_consult" required class="input">
+
+            <label for="email_consult" class="label">Email</label>
+            <input type="text" id="email_consult" name="email_consult" required class="input">
+            
+            <label for="consultas" class="label">Consulta</label>
+            <textarea name="consultas" id="consultas" placeholder="Escribe tus consultas aquí..." required></textarea>
+                
+            <input type="submit" value="Enviar consulta" class="boton-consulta">
+
+        </form>
+
+        <div class="direccion">
+            <h3 class="subtitle-direccion">¿Dónde estamos?</h3>
+            <p class="p1direccion">Calle Playa de Liencres, 2 bis. Parque Europa Empresarial. Edificio Madrid. 28290 (Las Rozas), Madrid</p> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6064.213770166125!2d-3.895844223395484!3d40.539227671420235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4182c527808345%3A0xd99cf803771e7271!2sU-tad%20%7C%20Centro%20Universitario%20de%20Tecnolog%C3%ADa%20y%20Arte%20Digital!5e0!3m2!1ses!2ses!4v1736504131659!5m2!1ses!2ses" width=100% height=auto style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>   
+        
+        <div class="final-pagina">
+            <div class="redes-sociales">
+                <div class="imagen-redsocial">
+                    <a href="https://es-es.facebook.com/utadcentrouniversitario" target="_blank">
+                        <img src="./src/icons/facebook.svg" alt="Facebook" style="width: 15px; height: 15px;">
+                    </a>
+                </div>
+                <div class="imagen-redsocial">
+                    <a href="https://x.com/U_tad?mx=2" target="_blank">
+                        <img src="./src/icons/twitter.svg" alt="Twitter" style="width: 15px; height: 15px;">
+                    </a>
+                </div>
+                <div class="imagen-redsocial">
+                    <a href="https://www.instagram.com/tu-perfil" target="_blank">
+                        <img src="./src/icons/instagram.svg" alt="Instagram" style="width: 15px; height: 15px;">
+                    </a>
+                </div>
+                
+                <div class="imagen-redsocial">
+                    <a href="https://www.linkedin.com/school/u-tad/" target="_blank">
+                        <img src="./src/icons/linkedin.svg" alt="Instagram" style="width: 15px; height: 15px;">
+                    </a>
+                </div>
+                <div class="imagen-redsocial">
+                    <a href="https://www.youtube.com/user/UniversidadUTAD" target="_blank">
+                        <img src="./src/icons/youtube.svg" alt="Instagram" style="width: 15px; height: 15px;">
+                    </a>
+                </div>
+            </div>    
+        </div>
+            
+    </section>    
+   
+</body>
+</html>
