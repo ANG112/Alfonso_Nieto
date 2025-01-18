@@ -1,0 +1,11 @@
+Páginas de muestra:
+- JSDayCanarias
+- midufest- la fiesta de la programación
+
+Referencia colores utilizados:
+#54595F color para las líneas de las tablas
+#f9f9f9 color para el fondo
+##0065EF color para el texto
+
+
+
